@@ -1,0 +1,11 @@
+
+{
+  "functions": {
+    "api/meta/cryptoteddies/[tokenId].ts": { "runtime": "nodejs18.x" },
+    "api/meta/cryptoteddies/editions/[dna].ts": { "runtime": "nodejs18.x" }
+  },
+  "rewrites": [
+    { "source": "/meta/cryptoteddies/:tokenId", "destination": "/api/meta/cryptoteddies/:tokenId" },
+    { "source": "/meta/cryptoteddies/editions/:dna", "destination": "/api/meta/cryptoteddies/editions/:dna" }
+  ]
+}
