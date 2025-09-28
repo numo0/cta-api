@@ -1,20 +1,14 @@
 {
   "name": "cta-api",
   "version": "1.0.0",
-  "description": "",
-  "scripts": {
-    "dev": "vercel dev",
-    "start": "vercel dev"
-    },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "type": "module",
+
   "dependencies": {
     "ethers": "^6.15.0"
   },
   "devDependencies": {
     "@types/node": "^24.5.2",
-    "tsx": "^4.20.5",
+    "@vercel/node": "^3.2.22",
     "typescript": "^5.9.2"
   }
 }

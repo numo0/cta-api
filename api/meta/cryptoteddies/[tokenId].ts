@@ -1,6 +1,6 @@
 import type { VercelRequest, VercelResponse } from "@vercel/node";
 import { ethers } from "ethers";
-import { CONTRACTS, ERC_ABI, META_ABI, decodeDataURI, getProvider, patchImageWithS3 } from "./_shared";
+import { CONTRACTS, ERC_ABI, META_ABI, decodeDataURI, getProvider, patchImageWithS3 } from "./_shared.js";
 
 export default async function handler(req: VercelRequest, res: VercelResponse) {
   try {
