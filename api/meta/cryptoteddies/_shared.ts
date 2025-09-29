@@ -21,7 +21,7 @@ export const getProvider = () =>
   new ethers.JsonRpcProvider(process.env.RPC_URL);
 
 export const patchImageWithS3 = (meta: any, dna: string | number) => {
-  meta.image = `https://creco-images.s3.amazonaws.com/static/CryptoTeddies/${dna}.gif`;
+  meta.image = `https://img.cryptoteddies.xyz/static/CryptoTeddies/${dna}.gif`;
   if (Array.isArray(meta.attributes)) {
     meta.attributes = meta.attributes.filter(
       (attr: any) =>
