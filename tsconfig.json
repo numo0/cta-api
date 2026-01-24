@@ -3,9 +3,12 @@
     "target": "ES2022",
     "module": "NodeNext",
     "moduleResolution": "NodeNext",
+    "outDir": "./netlify/functions",
+    "rootDir": "./",
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true
   },
-  "include": ["api/**/*.ts"]
+  "include": ["netlify/**/*.ts", "api/**/*.ts"],
+  "exclude": ["node_modules"]
 }

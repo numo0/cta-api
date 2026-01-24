@@ -1,0 +1,17 @@
+[build]
+  command = "npm run build"
+  functions = "netlify/functions"
+  publish = "public"
+
+[functions]
+  node_bundler = "esbuild"
+
+[[redirects]]
+  from = "/meta/cryptoteddies/editions/:dna"
+  to = "/.netlify/functions/cryptoteddies-editions/:dna"
+  status = 200
+
+[[redirects]]
+  from = "/meta/cryptoteddies/:tokenId"
+  to = "/.netlify/functions/cryptoteddies-metadata/:tokenId"
+  status = 200
