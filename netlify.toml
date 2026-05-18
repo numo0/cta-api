@@ -15,3 +15,8 @@
   from = "/meta/cryptoteddies/:tokenId"
   to = "/.netlify/functions/cryptoteddies-metadata/:tokenId"
   status = 200
+
+[[redirects]]
+  from = "/honeyjar/:id"
+  to = "/.netlify/functions/honeyjar-metadata"
+  status = 200
